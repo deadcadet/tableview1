@@ -1,8 +1,13 @@
-//
-//  Contact.swift
-//  tableview
-//
-//  Created by Артур Ганиев on 14.12.2023.
-//
-
 import Foundation
+protocol ContactProtocol {
+    var contactName: String { get set }
+    var contactPhone: String { get set }
+}
+
+struct Contact: ContactProtocol {
+    var contactName: String
+    
+    var contactPhone: String
+    
+    
+}
